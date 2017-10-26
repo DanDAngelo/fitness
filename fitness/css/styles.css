@@ -110,7 +110,31 @@ footer a {
 	display: none; 
 }
 
+/* Style for aside element */
+aside {
+	font-style: italic;
+}
 
+/* Style rule for input, select and textarea form elements */
+input, select, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+	
+/* Style rule for label elements */
+label {
+	display: block;
+}
+
+/* Style rule for unordered list within a form */
+form ul {
+	list-style-type: none;
+}
+
+/* Style rule for chkbx class */
+.chkbx {
+	display: inline-block;
+}
 
 /* Media query for tablet viewport targets screen size with a minimum width of 660px */
 /*----------------------------------------------------------------------------------*/
@@ -137,6 +161,7 @@ footer a {
 		clear: left; 
 		margin-top: -0.3em;
 		border-radius: 0%;
+		overflow: auto;
 	}
 	
 	/* Style specifies to hide the mobile class */
@@ -160,12 +185,13 @@ footer a {
 	.items {
 		display: block;
 		list-style-position: inside;
-		margin-bottom: 5em;
 	}
 	
 	/* Style specifies to display the tablet class */
 	.tablet {
 		display: block;
+		margin-top: -3em;
+		margin-bottom: -1em;
 	}
 	
 	/* Style specifies a font weight and top margin for description list terms */
@@ -195,8 +221,119 @@ footer a {
 		padding: 0;
 		text-decoration: none;
 	}
+	
+	/* Style specifies bottom padding for the section element */
+	section {
+		padding-bottom: 3em;
+	}
+	
+	/* Style for h1 element within the section element */
+	section h1 {
+		text-align: left;
+	}
+	
+	/* Style for anchor element within section element */
+	section a {
+		background-color: transparent;
+		color: #1D1D1C;
+		font-weight: normal;
+		padding: 0;
+		text-decoration: underline;
+	}
+	
+	/* Style for contact class */
+	.contact {
+		background-color: transparent;
+		color: #1D1D1C;
+		padding: 0; 
+		text-decoration: underline;
+	}
+	
+	/* Style for article element */
+	article {
+		background-color: #C1D9CA;
+		float: left;
+		margin: 0.5%;
+		padding: 0.5%;
+		text-align: center; 
+		width: 31%;
+	}
+	
+	/* Style for image element contained within the main article element */
+	main article img {
+		border: solid 0.1em #1D1D1C;
+		margin-left: auto;
+		margin-right: auto;
+		
+		}
+		
+		/* Style for paragraph element contain within the main article element */
+		main article p {
+			color: #000000;
+			margin-top: 2%;
+			padding: 1%;
+			text-align: left;
+		}
+		
+		/* Style for unordered list element contained within the main article element */
+		main article ul {
+			text-align: left;
+		}
+		
+		/* Style for aside elements */
+		aside {
+			background-color: #FFFFFF;
+			border-radius: 0 5em 5em 5em;
+			box-shadow: 1em 1em 1em;
+			color: #4C4F4D;
+			padding: 1.5em;
+			margin: 1em;
+		}
+			
+		/* Style for table */
+		table {
+			border: 0.1em solid #000000;
+			border-collapse: collapse;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+		}
+			
+		/* Style specifies border and padding for th and td elements */
+		th, td {
+			border: 0.1em solid #000000;
+			padding: 1em;
+		}
+			
+		/* Style for th element */
+		th	  {
+			background-color: #1D1D1C;
+			color: #FFFFFF;
+		}
+			
+		/* Style for caption element */
+		caption {
+			font-size: 1.5em;
+			font-weight: bold;
+			padding: 0; 
+		}
+		
+		/* Style rule for label elements */
+		label {
+			float: left;
+			padding-right: 0.5em;
+			text-align: right;
+			width: 10em;
+		}
+		
+		/* Style rule for btn class */
+		.btn {
+			margin-left: 12em;
+		}
+			
+			
 }
-/*-------------End tablet query------------------------------------------------------*/ 
+/*-------------End tablet media query------------------------------------------------*/ 
 
 /* Media query for desktop viewport targets screens with a minimum width of 830px */
 /*-----------------------------------------------------------------------------------*/
@@ -289,12 +426,6 @@ footer a {
 	}
 	
 	
-	
-	/* Style specifies the bottom margin for the items class */
-	.items {
-		margin-bottom: 6em;
-	}
-		
 	/* Style specifies a gradient for the body element */
 	body {
 		background-color: #FFFFFF;
@@ -305,6 +436,59 @@ footer a {
 		background-color: #2A2A2A;
 		margin-top: -0.2em;
 		padding: 2em;
+	}
+	
+	/* Style specifies color and left margin for the section element */
+	section {
+		color: #FFFFFF;
+		margin-bottom: 1em;
+		padding-bottom: 5em;
+	}
+	
+	/* Style for anchor element within the section element */
+	section a {
+		color: #FFFFFF;
+	}
+	
+	/* Style for paragraph within the section element */
+	section p {
+		margin-left: 0;
+	}
+	
+	/* Style for main h2 element */
+	main h2 {
+		color: #FFFFFF; 
+	}
+	
+	/* Style for contact class */
+	.contact {
+		color: #FFFFFF;	
+	}
+	
+	main article h2 {
+		color: #000000;
+	}
+	
+	/* Style for table element */
+	table {
+		background-color: #FFFFFF;
+		width: 85%;
+	}
+	
+	/* Style for caption element */
+	caption {
+		color: #FFFFFF;
+	}
+	
+	/* Style rule for form element */
+	form {
+		background-color: #FFFFFF;
+		padding: 1em;
+	}
+	
+	/* Style rule for paragraph within form element */
+	form p {
+		color: #000000;
 	}
 }
 /*-------------End desktop media query--------------------------------------------*/
